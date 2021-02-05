@@ -277,13 +277,29 @@ box-shadow: 3px 3px 0 2px var(--primary-link-border,black);
     border: 2px solid gray;
 }
 .output {
-    height:20vh;
+    height:30vh;
     width: 80%;
-    border: 1px solid ;
-    --second-link-border:#334155 ;
+    border: 1px solid #334155   ;
     background:white;
     padding: 1rem;
     margin: 1rem;
 }
+/* textarea  */
 
+.inputTake {
+    width: 78%;
+    height:20vh;
+    font-family: unset;
+    color: var(--font-secondary-color, gray);
+
+}
+
+
+.flexBox {
+    display:flex;
+}
+
+.translation-image {
+    width: 20%; 
+}
 
