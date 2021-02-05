@@ -286,6 +286,9 @@ box-shadow: 3px 3px 0 2px var(--primary-link-border,black);
 }
 /* textarea  */
 
+.output--less-width {
+ width:73%;
+}
 .inputTake {
     width: 78%;
     height:20vh;
@@ -297,6 +300,8 @@ box-shadow: 3px 3px 0 2px var(--primary-link-border,black);
 
 .flexBox {
     display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .translation-image {
