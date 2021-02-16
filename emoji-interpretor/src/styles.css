@@ -1,0 +1,21 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  background: #ffffef;
+}
+.header {
+  font-weight: 500;
+  font-style: oblique;
+  color: orange;
+  text-shadow: 2px 1px orangered;
+}
+.InputEmoji {
+  width: 60vw;
+  padding: 0.7rem;
+}
+.Output {
+  color: gray;
+  font-weight: 100;
+}

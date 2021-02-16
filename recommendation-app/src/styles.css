@@ -1,0 +1,90 @@
+body {
+  background: #ffffef;
+  height: auto;
+}
+
+.App {
+  font-family: sans-serif;
+  width: 75%;
+  margin: auto;
+}
+.header__heading {
+  margin-bottom: 0;
+  font-size: 3rem;
+  text-shadow: 1px 1px gray;
+}
+
+.header__paragraph {
+  margin-top: 0.2rem;
+  color: gray;
+  text-decoration: underline double;
+  text-underline-offset: 5px;
+}
+.Recommendation-section {
+  display: grid;
+  grid-template-rows: repeat(2, auto minmax(10vh, 40vh));
+  height: 70vh;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+  border-bottom: 1px gray solid;
+  padding-bottom: 1rem;
+}
+.button-child {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid black;
+  color: gray;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 0 1px gray;
+  cursor: pointer;
+  transition: position 1s;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.button-child:hover {
+  background: white;
+  color: black;
+}
+.button-child:active {
+  top: 2px;
+  left: 2px;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 800px) {
+  .Recommendation-section {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    height: 50vh;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-right: 1px gray solid;
+    border-bottom: none;
+    padding-right: 1rem;
+  }
+  .button-child {
+    margin: 1rem;
+  }
+}
+
+.box-solution {
+  border: 1px gray solid;
+  min-width: 30vw;
+  width: 20vw;
+  padding: 0 0.7rem;
+  margin: 1rem;
+  border-radius: 5px;
+  background: rgba(215, 215, 215, 0.4);
+}
+.box-solution:hover {
+  background: rgba(215, 215, 215, 0.9);
+}
