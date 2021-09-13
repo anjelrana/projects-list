@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+
+
+body {
+    margin:0;
+    font-family: "Montserrat", sans-serif;
+    --margin-box: 0.4rem;
+    --padding-box: 0.4rem;
+    --box-shadow: 1px 1px 4px gray;
+    --border-radius:0.3rem;
+    --seconday-color:white;
+    --primary--color:rgb(24, 88, 207);
+    --profit:green;
+    --loss:red;
+    --padding-input: 0.4rem 0.2rem;
+    --font: "Montserrat", sans-serif;
+    background-image:url(mod.png);
+    background-size: cover;
+    position:center;
+    color: white;
+}
+
+.main-box {
+    display: grid;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 1rem;
+    padding: 2.5rem;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 1rem;
+}
+.input-coin-board {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-box, 0.4rem);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.input-coin-board form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+label, button {
+    margin: var(--margin-box);
+    padding: var(--padding-input);
+    font-weight: 300;
+}
+input {
+    float: right;
+    clear:both;
+    width:20rem;
+    height: 1rem;
+    padding: var(--padding-input);
+    font-family: var(--font);
+    border-radius: var(--border-radius);
+    font-weight: 500;
+}
+select{
+    float: right;
+    clear:both;
+    width:20.5rem;
+    height: 2.5rem;
+    padding: var(--padding-input);
+    font-family: var(--font);
+    border-radius: var(--border-radius);
+    font-weight: 500;
+}
+input[type="number"] {
+    border: none;
+    appearance: textfield;
+    margin: 0;
+    
+}
+input[type="number"]:valid , input[type="date"]:valid {
+    border: 2px rgb(119, 175, 238) solid;
+}
+
+input[type="number"]:focus, input[type="date"]:focus {
+    outline: none;
+    border: 2px rgb(11, 95, 190) solid;
+}
+button {
+    border: none;
+    color: var(--seconday-color);
+    background: var(--primary--color);
+    border-radius: var(--border-radius);
+    width:10rem;
+    padding:var(--padding-box);
+    box-shadow: 3px 3px 0px 2px rgb(10, 94, 133);
+    pointer-events: pointer;
+    align-self: flex-end;
+    position: relative;
+}
+button:active {
+    box-shadow: none;
+    top:3px;
+    left:3px;
+}
+/*image - coin*/
+.coin-image {
+    width: 370px;;
+    height: 259px;
+    object-fit: contain;
+}
+
+
+
+
+.dog-meme-board {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    height: 450px;
+}
+.image-doge {
+    width:500px;
+    height:450px;
+    object-fit: contain;
+    margin: auto ;
+    display: block;
+}
+
+.output-board {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    height: 450px;
+    padding: var(--padding-box);
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+    
+}
+
+.output-board-child {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+
+
+
+

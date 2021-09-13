@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;500&display=swap');
+
+@font-face {
+    font-family: "cashier";
+    src: url(cashier/Cashier.ttf);
+} 
+
+
+body {
+    background-image: url("background.jpg");
+    background-position: center center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    --header-font:"cashier", sans-serif;
+    height:100vh;
+}
+
+.main {
+    width:50%;
+    margin: 1rem auto;
+    background: #ffffef;
+    padding: 2rem;
+    border-radius : 0.4rem;
+}
+.main:hover {
+    box-shadow: 0px 0px 5px 1px gray;
+}
+
+.main__header {
+    font-family: var(--header-font, sans-serif);
+    font-size: 3rem;
+}
+
+.main__para, .main__label {
+    font-family: 'Kiwi Maru', serif;
+    font-weight: 300;
+}
+.main__label {
+    margin: 1rem auto;
+    font-weight: 500;
+}
+
+.main__input {
+    display:inline;
+    background: none;
+    width:10rem;
+    float: right;
+    border: none;
+    border-bottom: 1px solid gray;
+    appearance: textfield;
+    margin: 0;
+}
+
+.main__input:focus {
+    outline: none;
+}
+/* notes */
+
+.notes {
+    background: lightgreen;
+    font-family:'Kiwi Maru', serif ;
+    list-style: none;
+    width: 25%;
+    margin: auto;
+    color:darkgreen;
+    border-radius: 5px;
+    padding:1rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+    line-height: 2;
+    font-weight: 300;
+
+}
+
+.notes__number {
+    font-weight: 500;
+}
+
+.hit,.restart,.next {
+    background: rgb(199, 198, 198);
+    border: 1px black solid;
+    font-family: "Kiwi Maru";
+    border-radius: 5px;
+
+    padding: 0.2rem 1rem;
+    float: right;
+    margin-top: 10px;
+}

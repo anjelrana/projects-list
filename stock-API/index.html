@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, fit-to-shrink=no">
+    <title>Stock-P&L</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main-box">
+        <div class="input-coin-board">
+
+            <form >
+                <label>
+                    Select the coin: 
+                    <select name="select-coin" id="select-coin" autofocus required>
+
+                        <option value="select" disabled selected >Select the coin</option>
+                       
+                            <option value="0">Bitcoin</opion>
+                                <option value="1">Dogecoin</option>
+                                <option value="2">Ethereum</option>
+                                <option value="3">Shib inu</option>
+                                <option value="4">Tether</option>
+                                <option value="5">Binanace</option>
+                                <option value="6">XRP</option>
+                                <option value="7">Litecoin</option>
+                                <option value="8">Uniswap</option>
+                       
+                        
+                    </select>
+                </label>
+                <label>
+                    Price at purchased:
+                    <input type="text" class="price-of-coin" placeholder="Enter the price you purchased in ₹" autofocus required>
+                </label>
+                <label>
+                    Date on which you purchased the coin:
+                    <input type="date" min="2013-01-01" class="date-purchased" title="optional">
+                </label>
+                <label>
+                    Quantity:
+                    <input type="number" class="quantity-of-coin" placeholder="Enter the quantity of coin , eg :100" required>
+                </label>
+                <button type="button" class="get-data">
+                    Get Result
+                </button>
+
+            </form>
+            <div class="coin">
+                <img src="images-meme/1.png" alt="coin" class="coin-image">
+            </div>
+        </div>
+        <div class="dog-meme-board">
+            <img src="images-meme/moderate.jpg" alt="meme-board" class="image-doge">
+        </div>
+        <div class="output-board">
+            <div class="output-board-child"> <div class="current-price">Current Price : </div><span class="value-result">----</span>
+            </div>
+
+            <div class="output-board-child">
+            <div class="profit-loss">Profit / Loss: Absolute</div> <span class="value-result">----</span>
+            </div>
+
+            <div class="output-board-child">
+                <div class="profit-loss">Profit / Loss: percentage</div> <span class="value-result">----</span>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

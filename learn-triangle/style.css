@@ -1,0 +1,122 @@
+#canvas {
+border: 2px solid rgb(255, 255, 255);
+border-radius: 5px;
+background: white;
+}
+.canvas1 {
+    border: 2px solid black;
+    border-radius: 5px;
+    background: rgba(184, 183, 183,0.2);
+    position: absolute;
+    top:8px;
+    left:97px;
+}
+
+body {
+display: flex;
+justify-content: space-evenly;
+background:linear-gradient(gray, rgb(206, 202, 202));
+color:white;
+font: 16px sans-serif;
+}
+
+.inputs {
+width: auto;
+}
+
+input[type="number"] {
+width: 15rem;
+padding: 10px;
+margin: 10px;
+border:none;
+border-radius:2px;
+
+}
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="number"]:focus {
+    outline:none;
+}
+
+
+.button {
+    width:auto;
+    background:rgb(66, 66, 66);
+    padding:10px 8px;
+    color:white;
+    border-radius:5px;
+    border:1px solid white;
+    cursor:pointer;
+
+}
+details {
+
+    position:relative;
+
+}
+summary::marker {
+    content:"";
+}
+
+details > summary::before {
+    content:"🔺 ";
+    position:absolute;
+    left:60px;
+    top:-1.5px;
+}
+details[open] > summary::before {
+    content:"🔺 ";
+    animation: spin 1s forwards;
+    transform: rotate(0) ;
+}
+@keyframes spin {
+    0% {
+    transform:rotate(0);
+    }
+
+    100% {
+        transform: rotate(1260deg);
+    }
+}
+
+ul {
+    list-style-type: none;
+    counter-reset: li;
+}
+li::before {
+counter-increment: li;
+content:counter(li) ".  "; 
+}
+
+.button:hover {
+    animation: backgrad 1s forwards ;
+    
+
+}
+
+@keyframes backgrad {
+    0% {
+        background-image: linear-gradient(to top right,rgb(11, 158, 163) 20px ,rgb(12,158,163) 40px);
+    background-size: 20% 100% ;
+    background-repeat: no-repeat;
+    }
+    100% {
+         background-image: linear-gradient(to top right,rgb(12, 158, 163) 40px, rgb(12,158,163) 40px);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+}
+
+.types {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.I:focus {
+    border:2px rgb(139, 173, 212) solid;
+    box-shadow: 0 0 10px 6px cadetblue ;
+}

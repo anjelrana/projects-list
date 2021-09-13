@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,fit-to-zero=no">
+    <title>Arrange your class</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__heading">Arrange your class or data</h1>
+        <p class="header__para">you can arrange your class children on name basis or marks basis or data with it's
+            quantity or name of the data.</p>
+    </header>
+
+    <div class="data">
+        <div class="data__child data__header">
+            <div class="data__header-item-index">Index</div>
+            <div class="data__header-item-name">Name</div>
+            <div class="data__header-item-number">Number</div>
+        </div>
+            
+        <div class="data__child data__list">
+
+            <div >-</div>
+            <input type="text" class="data__list-item-input-name" autofocus>
+            <input type="text" class="data__list-item-input-number">
+        </div>
+    </div>
+    <div class="button-area">
+        <button class="button-tap button--name">Sort By Name</button>
+        <button class="button-tap button--number">Sort By Number</button>
+        <button class="button-tap button--add">Add in List</button>
+        <button class="button-tap button--restart">Restart</button>
+    </div>
+
+   <div class="output">
+    <p class="output-para">
+
+    </p>
+    <div class="max-value">
+        0
+    </div>
+    <div class="min-value">
+        0
+    </div>
+   </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

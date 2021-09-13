@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "h";
+    src: url(heading.otf);
+}
+
+body {
+   margin: 0;
+   height: 100vh;
+   background-attachment: fixed;
+   --background: rgba(00,97,168,0.8);
+}
+img {
+    position:fixed;
+    top: 0;
+    height: 100%;
+    z-index: -10;
+    margin: 0;
+    width: 100%;
+    filter: blur(1px) opacity(0.9) saturate(150%);
+    object-fit: cover;
+
+}
+
+/* //main and aside  */
+main, aside {
+    background-color: var(--background);
+    padding: 2rem;
+    width: 70%;
+    margin: 1rem auto;
+    font-family: "h", sans-serif;
+    color: #4e3620;
+    border-radius: 2rem 0 0;
+}   
+
+main  h1, aside h1 {
+    display: inline-block;
+    background: brown;
+    color:white;
+    padding: 0.1rem 0.2rem;
+}
+main  p, aside p {
+    display: inline-block;
+    background: brown;
+    color:white;
+    padding: 0.1rem 0.2rem;
+}
+.input {
+    width: 30%;
+    padding: 0.3rem 1rem;
+    border: none;
+    background: rgba(255, 255, 91, 0.733);
+    color: blue;
+    margin: 1rem 3rem 0 0;
+}
+.input:focus {
+    outline: none;
+    border-bottom: 2px rgb(116, 3, 3) solid;
+}
+
+
+aside {
+    border-radius: 0 0 4rem 0;
+}
+
+button {
+    background: greenyellow;
+    border:1px solid blue;
+    margin:1rem 0;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+button:hover {
+    cursor: pointer;
+}
+button:active {
+    cursor: progress;
+}

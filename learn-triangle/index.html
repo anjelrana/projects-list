@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    
+    <canvas id="canvas" width="700" height="600">
+
+    </canvas>
+
+    <div class="inputs">
+        <button class="draw button">
+            Draw Triangle ✎
+        </button>
+
+        <hr>
+
+        
+        <label >
+        First Angle    
+        <input class="firstI I" type="number" placeholder="must be under 180 and postive" autofocus required>        
+        </label> <br>
+        <label >
+        Second Angle    
+        <input class="secondI I" type="number" placeholder="must be under 180 and postive" autofocus required>        
+        </label><br>
+        <label >
+        Third Angle    
+        <input class="thirdI I" type="number" placeholder="must be under 180 and postive" autofocus required>        
+        </label><br>
+        
+    <input type="button" value="restart   🔺" class="button restart">
+        <hr>//under - development - all the followings - v1
+        <p style="font-size:20px;">
+            click three areas in the canvas
+            <button class="button">
+                Start
+            </button>
+        </p>
+        <hr>
+        <h2 class="types">
+            Types of triangle
+        </h2>       
+        <p>
+            Based on the angles and sides, there are three each.
+            <details>
+                <summary>Sides</summary>
+                <ul>
+                    <li>Equilateral Triangle</li>
+                    <li>Isosceles Trianlge</li>
+                    <li>Scalene</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Angles</summary>
+                <ul>
+                    <li>Obtuse angle triangle</li>
+                    <li>Right angle trianlge</li>
+                    <li>Acute angle Triangle</li>
+                </ul>
+            </details>
+
+
+        </p> 
+
+
+        <div class="output">
+            Your Triangle is ......
+        </div>
+    </div>
+   <script src="app.js" defer></script> 
+</body>
+</html>

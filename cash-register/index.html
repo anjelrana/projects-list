@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>cash register management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="main">
+
+        <header>
+            <h1 class="main__header">Cash Register Management</h1>
+            <p class="main__para">Get the best way to return the balance with available currencies</p>
+        </header>
+
+        <label class="main__label bill" for="bill-amount">
+            Bill Amount ₹
+            <input type="number" placeholder="₹" class="main__input" id="bill-amount" >
+        </label> <br>
+        <label class="main__label cash" for="cash-received">
+            Cash Received ₹
+            <input type="number" placeholder="₹" class="main__input" id="cash-received">
+        </label>
+        
+        
+    </form>
+
+    <ul class="notes">
+        <button class="next">
+            Next
+        </button>
+        <button class="hit">
+            Find Out
+        </button>
+        <button class="restart">
+            Restart value
+        </button>
+        
+        <li>1 rupee coin:  <span class="notes__number"> </span></li>
+        <li>5 rupee coin:  <span class="notes__number">  </span></li>
+        <li>10 rupee coin or note:  <span class="notes__number">  </span></li>
+        <li>20 rupee note: <span class="notes__number">  </span></li>
+        <li>100 rupee note: <span class="notes__number">  </span></li>
+        <li>500 rupee note <span class="notes__number">  </span></li>
+        <li>2000 rupee note <span class="notes__number">  </span></li>
+        <li>
+            Return amount is <span class="notes__return-value">0</span>
+        </li>
+    </ul>
+    <script src="app.js"></script>
+</body>
+
+</html>

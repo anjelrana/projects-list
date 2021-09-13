@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crop the image</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <canvas id="canvas" width="600" height="600" >
+       
+    </canvas>
+
+    <!-- input  -->
+
+    <div class="inputs">
+
+        <label for="img">
+            Choose your image
+        <input type="file" accept="image/*" id="img" name="image">
+
+        </label>
+        <div class="output">
+
+            <div class="output-text">
+                <p class="size">size : ?</p>
+                <p class="type">type : ?</p>
+            </div>
+            <img src="1.png" alt="--your-image--">
+
+        </div>
+        
+        <div class="choices">
+            <select name="crop" id="crop">
+                <option disabled selected value="-">Select the crop value</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="9">9</option>
+            </select>
+
+            <input type="button" value="Start cropping" id="crop-start">
+        </div>
+        <div class="download">
+            <a href="#" class="preview">preview</a>
+        <a href="#" class="downloadImg" > Download image</a>
+
+        </div>
+    </div>
+
+    <div class="hidden">
+        <canvas id="showcase">
+
+        </canvas>
+
+        <button id="close">
+            X
+        </button>
+        <div class="toggle">
+            
+        <button class="prev">
+            ⬅️ 
+        </button>
+          <button class="next">
+           ➡️
+        </button>
+        
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

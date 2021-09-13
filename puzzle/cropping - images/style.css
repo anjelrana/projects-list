@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    position: relative;
+ 
+}
+
+#canvas{
+    border:2px solid rgb(87, 86, 86);
+    border-radius : 5px ;
+}
+.canvas2 {
+    position: absolute;
+    left: 98px;
+    top: 0;
+    border:2px solid rgba(68, 68, 68, 0.3);
+    border-radius : 5px ;
+    background-color:rgba(39, 38, 38, 0.5) ;
+}
+
+.inputs {
+    width:30vw;
+    background-color: rgb(185, 185, 185);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+label{
+    border:1px solid gray;
+    color: white;
+    background-color: rgb(66, 66, 66);
+    border-radius: 5px;
+    position: relative;
+    padding: 10px;
+
+}
+/* //outputst */
+
+.output {
+    display: flex;
+    margin: 5rem 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* choices */
+.choices {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(40px, 150px));
+    gap: 80px;
+    align-items: center;
+
+}
+select {
+    height: 20px;
+    width: 200px;
+    padding:5px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    height: 2rem;
+}
+
+input[type="button"] {
+    border: 1px solid rgb(65, 65, 65);
+    border-radius:4px;
+    color: white;
+    width: 120px;
+    background: gray;
+    padding: 5px;
+}
+.download {
+    margin: 3rem 1rem;
+    text-align: center;
+}
+.downloadImg,  .preview{
+    border: 1px solid white;
+    color:white;
+    background: black;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.hidden {
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: rgba(46, 46, 46, 0.3);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#showcase {
+    background: white;
+    position: absolute;
+    top: 20px;
+    left: 34%;
+    width:500px;
+    height: 500px;
+}
+
+#close {
+    color:red;
+    padding: 5px 5px;
+    background: yellow;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+.toggle {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+   
+}
+.prev, .next {
+     font-size: 30px;
+     border-radius: 5px;
+}
+.vanish {
+    display: none;
+}

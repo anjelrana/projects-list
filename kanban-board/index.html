@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Kanban Board</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="front-end kanban board for day">
+    <meta name="author" content="Anjel Rana">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__info">
+            <h1 class="header__info-heading">Kanban Board</h1>
+            <p class="header__info-text">arrange your work locally</p>
+        </div>
+        <nav class="header__nav">
+            <button class="header__nav-hamburger"></button>
+            <div class="header__nav-list">
+                <div class="header__nav-list-date">
+                    <h1>Today's&nbsp;date</h1>
+                    <p class="date-place">date month, year</p>
+                </div>
+                <div class="header__nav-list-background">
+
+                    <details class="header__nav-list-background-details">
+                        <summary class="header__nav-list-background-summary">Background</summary>
+                        <div class="header__nav-list-background-image">
+                            <input title="color-pallate" type="color" name="color-background" id="background"
+                                class="color-range">
+                                <img src="1.jpg" alt="-" class="header__nav-list-background-image2 scenery">
+                            <img src="2.png" alt="-" class="header__nav-list-background-image2 code">
+                            
+                        </div>
+                        <details class="header__nav-list-background-url-details">
+                            <summary class="header__nav-list-background-url-summary">Custom</summary>
+                            <div class="header__nav-list-background-url-box">
+                                <input type="url" name="source-image" id="image" placeholder="URL"
+                                    title="Put Url: unsplash.com/img.png" value="https://image.tmdb.org/t/p/original/6fZebrmLHzbT9QLBUbrh7ovuh6Q.jpg">
+                                <input type="button" value="select" class="src-button">
+                            </div>
+                        </details>
+
+                    </details>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <template>
+        <div class="list">
+            <div class="list-container-childs">
+                <div class="list-child list-header">
+                    <p class="list-header-p"></p>
+                    <div class="list-header-more"><hr></div>
+                    <div class="list-header-more-info">
+                        <div>delete</div>
+                    </div>
+                </div>
+    
+                <div class="allcard">
+                    
+                </div>
+                <div class="create-card list-child"><span class="plus">+</span> Add another card</div>
+                <div class="create-card-input">
+                    <textarea rows="3" type="text" name="card-value" id="card-value" placeholder="Enter a title for this card" class="card-input-value" autofocus></textarea>
+                    <div class="card-input-button">
+                        <button class="card-input-button-add">Add</button>
+                        <span class="plus card-cross">X</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </template>  
+    <div class="list-container">
+        
+        <div class="list">
+            <div class="list-container-childs">
+                <div class="list-child list-header">
+                    <p class="list-header-p" contenteditable="true">Edit-Me</p>
+                    <div class="list-header-more"><hr></div>
+                    <div class="list-header-more-info">
+                        <div>delete</div>
+                    </div>
+                </div>
+    
+                <div class="allcard">
+                    
+                </div>
+                <div class="create-card list-child"><span class="plus">+</span> Add another card</div>
+                <div class="create-card-input">
+                    <textarea rows="3" type="text" name="card-value" id="card-value" placeholder="Enter a title for this card" class="card-input-value" autofocus></textarea>
+                    <div class="card-input-button">
+                        <button class="card-input-button-add">Add</button>
+                        <span class="plus card-cross">X</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <div class="create-list">
+            <div class="create-list-add">
+                <span class="plus"> + </span>
+            Add another list
+            </div>
+            <div class="create-list-add-info">
+                <textarea rows="1" type="text" name="card-value" id="card-value" 
+                class="new-list-value"
+                placeholder="Enter a title for List" autofocus></textarea>
+                <div class="card-input-button">
+                    <button class="list-input-button">Add</button>
+                    <span class="plus list-cancel">X</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
